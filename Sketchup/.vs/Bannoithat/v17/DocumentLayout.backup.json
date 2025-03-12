@@ -1,7 +1,29 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\New folder\\Nhom12\\Sketchup\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\giohang.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\giohang.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\noithattheoloai.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\noithattheoloai.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\chitietnoithat.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\chitietnoithat.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F0A92D-3285-48D4-87A6-D45DDAF3CD19}|D:\\Sketchup\\BanNoiThat-Nhom12|d:\\sketchup\\bannoithat-nhom12\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +31,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "homepage.aspx",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\homepage.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\homepage.aspx",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\homepage.aspx",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\homepage.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T18:53:40Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "giohang.aspx.cs",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx.cs",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAEwFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T22:33:35.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "giohang.aspx",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx*",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\giohang.aspx*",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T22:32:11.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "chitietnoithat.aspx.cs",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx.cs",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T22:10:09.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "chitietnoithat.aspx",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx*",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\chitietnoithat.aspx*",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T22:07:35.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "noithattheoloai.aspx",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T19:42:54.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "noithattheoloai.aspx.cs",
+              "DocumentMoniker": "D:\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx.cs",
+              "ToolTip": "D:\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\Sketchup\\BanNoiThat-Nhom12\\noithattheoloai.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T21:31:07.549Z",
+              "EditorCaption": ""
             }
           ]
         }
