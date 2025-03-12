@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "bannoithat_nhom12/1.0.0": {
+        "runtime": {
+          "bannoithat_nhom12.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bannoithat_nhom12/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

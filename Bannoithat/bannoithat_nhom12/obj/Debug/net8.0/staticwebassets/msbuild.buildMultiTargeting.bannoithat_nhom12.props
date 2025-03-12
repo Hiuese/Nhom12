@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\bannoithat_nhom12.props" />
+</Project>
