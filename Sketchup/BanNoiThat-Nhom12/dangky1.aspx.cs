@@ -21,46 +21,46 @@ public partial class dangky1 : System.Web.UI.Page
         SqlConnection cnn = new SqlConnection(
 "Data Source=DESKTOP-UV4BT4L\\SQLEXPRESS;Initial Catalog=Qlybannoithat_nhom12;Integrated Security=True;");
         DataTable dt = new DataTable();
-            string sql1 = "select * from tbl_user where tendn='" + txttendn.Text + "'";
-            String ten, mk, email;
-            ten = txttendn.Text;
-            mk = txtmk.Text;
-            email = txtemail.Text;
-            string sql2 = "insert into tbl_user values('" + ten + "','" + mk + "','" + email +
-    "')";
-            try
+        string sql1 = "select * from tbl_user where tendn='" + txttendn.Text + "'";
+        String ten, mk, email;
+        ten = txttendn.Text;
+        mk = txtmk.Text;
+        email = txtemail.Text;
+        string sql2 = "insert into tbl_user values('" + ten + "','" + mk + "','" + email +
+"')";
+        try
+        {
+            cnn.Open();
+            SqlDataAdapter ad = new SqlDataAdapter(sql1, cnn);
+            ad.Fill(dt);
+            SqlCommand cmd = new SqlCommand(sql2, cnn);
+            cmd.Connection = cnn;
+            if (dt.Rows.Count > 0)
             {
-                cnn.Open();
-                SqlDataAdapter ad = new SqlDataAdapter(sql1, cnn);
-                ad.Fill(dt);
-                SqlCommand cmd = new SqlCommand(sql2, cnn);
-                cmd.Connection = cnn;
-                if (dt.Rows.Count > 0)
+                //Response.Write("Tên ddn này đã tồn tại"); 
+                lblthongbao.Text = "Tên đăng nhập này đã tồn tại";
+                txttendn.Focus();
+            }
+            else
+            {
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
                 {
-                    //Response.Write("Tên ddn này đã tồn tại"); 
-                    lblthongbao.Text = "Tên đăng nhập này đã tồn tại";
-                    txttendn.Focus();
+                    lblthongbao.Text = "Đăng ký thành công";
                 }
                 else
                 {
-                    int i = cmd.ExecuteNonQuery();
-                    if (i > 0)
-                    {
-                        lblthongbao.Text = "Đăng ký thành công";
-                    }
-                    else
-                    {
-                        lblthongbao.Text = "Lỗi";
-                    }
+                    lblthongbao.Text = "Lỗi";
                 }
             }
-            catch (Exception ex)
-            {
-                Response.Write(ex.Message);
-            }
-            finally
-            { cnn.Close(); }
         }
+        catch (Exception ex)
+        {
+            Response.Write(ex.Message);
+        }
+        finally
+        { cnn.Close(); }
+    }
 
     protected void txttendn_TextChanged(object sender, EventArgs e)
     {
@@ -77,4 +77,3 @@ public partial class dangky1 : System.Web.UI.Page
 
     }
 }
-

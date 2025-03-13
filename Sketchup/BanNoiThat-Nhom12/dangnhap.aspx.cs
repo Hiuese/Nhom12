@@ -18,7 +18,10 @@ public partial class dangnhap : System.Web.UI.Page
 
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+  
+
+
+    protected void btndangnhap_Click(object sender, EventArgs e)
     {
         string sql1 = "select * from tbl_user where tendn='" + txttendn.Text + "' and matkhau='" + txtmatkhau.Text + "'";
         SqlConnection cnn = new SqlConnection(

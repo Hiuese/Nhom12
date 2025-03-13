@@ -1,82 +1,124 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <%@ Register src="WebUserControl.ascx" tagname="WebUserControl" tagprefix="uc1" %>
-
 <%@ Register src="menu.ascx" tagname="menu" tagprefix="uc2" %>
 
 <!DOCTYPE html>
-
-<html>
+<html lang="vi">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><asp:ContentPlaceHolder id="head" runat="server" /></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .header img {
             width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
         }
-        .auto-style2 {
-            height: 23px;
-            width: 173px;
+        .nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
         }
-        .auto-style4 {
-            width: 671px;
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .auto-style5 {
-            height: 23px;
-            width: 417px;
+        .nav a:hover {
+            text-decoration: underline;
         }
-        .auto-style6 {
-            width: 173px;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
         }
-        .auto-style7 {
-            height: 23px;
-            width: 352px;
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
         }
     </style>
 </head>
+    <link rel="stylesheet" type="text/css" href="aaa/styles.css" />
 <body>
     <form id="form1" runat="server">
-    <div>
-    </div>
-        <table class="auto-style1">
-            <tr>
-                <td colspan="3">
-                    <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/images/baner.jpg" Width="1097px" />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 1px">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/homepage.aspx">trang chủ</asp:HyperLink>
-&nbsp;&nbsp; ||&nbsp;&nbsp;
-                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/dangky1.aspx">Đăng ký</asp:HyperLink>
-&nbsp; ||&nbsp;
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/dangnhap.aspx">Đăng nhập</asp:HyperLink>
-&nbsp; ||&nbsp;
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/timkiem.aspx">Tìm kiếm</asp:HyperLink>
-&nbsp;&nbsp; ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="lblchaomung" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnthoat" runat="server" OnClick="btnthoat_Click" Text="đăng nhập" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style7">
-                    <uc1:WebUserControl ID="WebUserControl1" runat="server" />
-                </td>
-                <td class="auto-style5">
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-                </td>
-                <td class="auto-style2">
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4" colspan="2">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-            </tr>
-        </table>
+        <!-- Header -->
+        <div class="header">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/baner.jpg" ImageAlign="Middle" Width="100%" />
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/homepage.aspx">Trang chủ</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/dangky1.aspx">Đăng ký</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/dangnhap.aspx">Đăng nhập</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/timkiem.aspx">Tìm kiếm</asp:HyperLink>
+            <asp:Label ID="lblchaomung" runat="server" Text=""></asp:Label>
+            <asp:Button ID="btnthoat" runat="server" OnClick="btnthoat_Click" CssClass="btn-exit" />
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="sidebar">
+                <uc1:WebUserControl ID="WebUserControl1" runat="server" />
+            </div>
+            <div class="main-content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2023 Your Company. All rights reserved.
+        </div>
     </form>
 </body>
 </html>

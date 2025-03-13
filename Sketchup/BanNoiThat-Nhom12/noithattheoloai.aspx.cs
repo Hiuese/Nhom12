@@ -31,7 +31,9 @@ public partial class noithattheoloai : System.Web.UI.Page
 
     }
 
-    protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+   
+
+    protected void DataList1_SelectedIndexChanged1(object sender, EventArgs e)
     {
 
     }

@@ -9,27 +9,32 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["makhach"] != null)
+        if (!IsPostBack)
         {
-            lblchaomung.Text = "Chào mừng " + Session["makhach"];
-            btnthoat.Text = "Thoát";
-
+            if (Session["Username"] != null)
+            {
+                lblchaomung.Text = "Chào, " + Session["Username"].ToString();
+                btnthoat.Text = "Đăng xuất";
+            }
+            else
+            {
+                lblchaomung.Text = "";
+                btnthoat.Text = "Đăng nhập";
+            }
         }
 
     }
 
     protected void btnthoat_Click(object sender, EventArgs e)
     {
-        if (Session["makhach"] != null)
+        if (Session["Username"] != null)
         {
-            Session["makhach"] = null;
-            btnthoat.Text = "Đăng nhập";
-            lblchaomung.Text = " ";
-
+            Session.Abandon();
+            Response.Redirect("dangnhap.aspx");
         }
         else
         {
-            Response.Redirect("~/dangnhap.aspx");
+            Response.Redirect("dangnhap.aspx");
         }
     }
 }
